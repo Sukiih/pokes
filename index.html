@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="author" content="Waleska Silva">
+    <meta name="keywords" content="pokemon, pokemones, pokemon api">
+
+    <link rel="icon" type="image/png" href="https://img.icons8.com/ios-filled/50/000000/pokemon-go.png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemones - Sukiih</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokemones</h1>
+
+        <label for="pokemonName">Ingresa el nombre o id del pokemon:
+        <input type="text" id="pokemonName"></label>
+        <button onclick="getPokemon()">Muestrame el pokemon</button>
+        
+        <button onclick="getRandomPokemon()">Muestrame un pokemon random</button>
+        
+        <div id="pokemones">
+            <div class="row">
+                <div class="column">
+                    <div class="card" style="display: none;">
+                        <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
